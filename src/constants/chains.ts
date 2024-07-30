@@ -11,9 +11,9 @@ export enum Chain {
  * List of all the chain/network IDs supported
  */
 export enum SupportedChainId {
-  ETH_SEPOLIA = 11155111,
-  AVAX_FUJI = 43113,
-  ARB_SEPOLIA = 421614,
+  ETH_SEPOLIA = 1,
+  AVAX_FUJI = 43114,
+  ARB_SEPOLIA = 372,
 }
 
 /**
@@ -85,38 +85,38 @@ interface AddEthereumChainParameter {
 
 const ETH_SEPOLIA: AddEthereumChainParameter = {
   chainId: SupportedChainIdHex.ETH_SEPOLIA,
-  blockExplorerUrls: ['https://sepolia.etherscan.io'],
-  chainName: 'Sepolia Test Network',
+  blockExplorerUrls: ['https://etherscan.io'],
+  chainName: 'Ethereum',
   nativeCurrency: {
     name: 'Ethereum',
     symbol: 'ETH',
     decimals: 18,
   },
-  rpcUrls: ['https://sepolia.infura.io/v3/'],
+  rpcUrls: ['https://ethereum-rpc.publicnode.com'],
 }
 
 const AVAX_FUJI: AddEthereumChainParameter = {
   chainId: SupportedChainIdHex.AVAX_FUJI,
-  blockExplorerUrls: ['https://testnet.snowtrace.io/'],
-  chainName: 'Avalanche FUJI C-Chain',
+  blockExplorerUrls: ['https://snowtrace.io/'],
+  chainName: 'Avalanche',
   nativeCurrency: {
     name: 'Avalanche',
     symbol: 'AVAX',
     decimals: 18,
   },
-  rpcUrls: ['https://api.avax-test.network/ext/bc/C/rpc'],
+  rpcUrls: ['https://avalanche.public-rpc.com'],
 }
 
 const ARB_SEPOLIA: AddEthereumChainParameter = {
   chainId: SupportedChainIdHex.ARB_SEPOLIA,
-  blockExplorerUrls: ['https://sepolia.arbiscan.io/'],
+  blockExplorerUrls: ['https://explorer.fortresschain.finance/'],
   chainName: 'Arbitrum Sepolia Testnet',
   nativeCurrency: {
-    name: 'Ethereum',
-    symbol: 'ETH',
+    name: 'FortressChain',
+    symbol: 'FTSC',
     decimals: 18,
   },
-  rpcUrls: ['https://arb-sepolia.g.alchemy.com/v2/demo'],
+  rpcUrls: ['https://rpc.fortresschain.finance/'],
 }
 
 interface ChainIdToChainParameters {
