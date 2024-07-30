@@ -21,9 +21,9 @@ export enum SupportedChainId {
  * TODO: Infer from SupportedChainId
  */
 export const SupportedChainIdHex = {
-  ETH_SEPOLIA: '0xaa36a7',
-  AVAX_FUJI: '0xa869',
-  ARB_SEPOLIA: '0x66eee',
+  ETH_SEPOLIA: '0x1',
+  AVAX_FUJI: '0xA86A',
+  ARB_SEPOLIA: '0x174',
 }
 
 interface ChainToChainIdMap {
