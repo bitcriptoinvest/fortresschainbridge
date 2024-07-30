@@ -50,7 +50,7 @@ interface ChainToChainNameMap {
 export const CHAIN_TO_CHAIN_NAME: ChainToChainNameMap = {
   ETH: 'Ethereum',
   AVAX: 'Avalanche',
-  ARB: 'Arbitrum',
+  ARB: 'FortressChain',
 }
 
 /**
